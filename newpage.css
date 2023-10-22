@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -263,7 +263,6 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
 }
 @media (max-width: 775px) {
   .main-footer form > * {
@@ -290,7 +289,7 @@ body{
 }
 .lower p {
   color: #224f34;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -298,22 +297,21 @@ body{
   text-align: center;
 }
 /****************************/
-#front-page{
-  background: #BED4C1;
+#front-page {
+  background: #bed4c1;
   width: 100vw;
   /* height: 100vh; */
 }
 .navbar-no-bootstrap {
-  
   /* top: -3698px;
   left: -864px; */
-  background: #BED4C1;
+  background: #bed4c1;
   padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.navs{
+.navs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -321,8 +319,8 @@ body{
   justify-content: space-evenly;
   gap: 25px;
 }
-.title{
-  color: #224F34 !important;
+.title {
+  color: #224f34 !important;
   font-size: 40px !important;
   font-style: normal;
   font-weight: 400 !important;
@@ -330,9 +328,9 @@ body{
   /* align-selpx; */
 }
 
-.nav{
+.nav {
   /* flex:1; */
-  color: #224F34 !important;
+  color: #224f34 !important;
   /* height: fit-content; */
   font-family: "Poppins", sans-serif;
   font-size: 26px !important;
@@ -340,8 +338,8 @@ body{
   font-weight: 500 !important;
   line-height: normal;
   text-transform: uppercase;
-} 
-.nav:hover{
+}
+.nav:hover {
   cursor: pointer;
 }
 /* .container{
@@ -353,75 +351,118 @@ body{
   align-items: center;
   justify-content: space-evenly;
 }*/
-.middle{
+.middle {
   transform: translateY(-10px);
-  background: #BED4C1;
-  display: flex;
+  background: #bed4c1;
+  /* display: flex; */
   height: 90vh;
   align-items: center;
+  flex-direction: column; /* Change flex direction to column on smaller screens */
+  text-align: center; /* Center the content on smaller screens */
 }
-.slogan{
+
+.slogan {
   padding: 50px;
   width: 663px;
   height: 241px;
   flex-shrink: 0;
-  color: #224F34;
-  font-family: 'Rufina', serif;
+  justify-content: start;
+  color: #224f34;
+  font-family: "Rufina", serif;
   font-size: 86px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  order: 2; /* Change the order of the slogan on smaller screens */
 }
-.images{
+
+.images {
   display: flex;
+  justify-content: end;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-left: 100px;
   margin-top: 50px;
+  order: 1; /* Change the order of the images on smaller screens */
 }
-.top{
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .middle {
+    transform: translateY(-10px);
+    background: #bed4c1;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column; /* Change flex direction to column on smaller screens */
+    text-align: center; /* Center the content on smaller screens */
+  }
+  .slogan {
+    padding: 50px;
+    height: 241px;
+    flex-shrink: 0;
+    justify-content: start;
+    color: #224f34;
+    font-family: "Rufina", serif;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%; /* Make the slogan take full width on small screens */
+    order: 1; /* Change the order of the slogan on small screens */
+  }
+
+  .images {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0; /* Remove the margin on small screens */
+    order: 2; /* Change the order of the images on small screens */
+  }
+}
+.top {
   /* transform: translate(-150px, -280px); */
   transform: translate(-126%, -41%);
 }
-.bottom{
+.bottom {
   /* transform: translate(-800px, 280px); */
   transform: translate(-672%, 41%);
 }
 
-.bg-transition{
+.bg-transition {
   transform: translateY(-10px);
-  height: 20vh;
-  background-image: linear-gradient(to bottom, #BED4C1, #A6BCA9);
+  height: 10vh;
+  padding: 1vh;
+  /* background-image: linear-gradient(to bottom, #bed4c1, #a6bca9); */
 }
 
 /************* bootstrap components *************/
-.container-fluid{
+.container-fluid {
   padding: 50px !important;
 }
-nav *{
-  background-color: #BED4C1!important;
+nav * {
+  background-color: #bed4c1 !important;
 }
-nav{
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
-@media (max-width:1715px){
-  .middle{
+@media (max-width: 1715px) {
+  .middle {
     z-index: 1;
     flex-direction: column;
     height: fit-content;
     /* align-items: center; */
   }
 }
-@media (max-width:1050px){
-  
-  .middle .top,.middle .bottom{
+@media (max-width: 1050px) {
+  .middle .top,
+  .middle .bottom {
     display: none;
   }
-
 }
-@media (max-width:810px){
-  .slogan{
+@media (max-width: 810px) {
+  .slogan {
     font-size: 50px;
     display: block;
     padding-left: 0px;
@@ -429,14 +470,13 @@ nav{
     padding-bottom: 0px;
     text-align: center;
   }
-  .middle .samarthan-logo{
+  .middle .samarthan-logo {
     height: 80vw;
     width: 80vw;
   }
-  
 }
-@media (max-width:670px){
-  .slogan{
+@media (max-width: 670px) {
+  .slogan {
     font-size: 40px;
     display: block;
     padding-left: 0px;
@@ -446,35 +486,54 @@ nav{
     width: fit-content;
     height: fit-content;
   }
-  .middle>.images{
+  .middle > .images {
     margin-left: 0px;
   }
-  .middle .samarthan-logo{
+  .middle .samarthan-logo {
     height: 80vw;
     width: 80vw;
   }
-  
 }
-@media (max-width:480px){
-  .slogan{
+@media (max-width: 480px) {
+  .slogan {
     font-size: 30px;
   }
-  .title{
+  .title {
     font-size: 30px !important;
   }
 }
-@media (max-width:350px){
-  .slogan{
+@media (max-width: 350px) {
+  .slogan {
     font-size: 20px;
   }
-  .title{
+  .title {
     transform: translateX(-20px);
     font-size: 20px !important;
   }
 }
-@media (min-width: 992px){
-  #navbarSupportedContent{
+@media (min-width: 992px) {
+  #navbarSupportedContent {
     position: absolute;
     right: 20px;
   }
+}
+/************** Scrollbar css************** /
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #6f9e82;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4b6354;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f8f74;
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./newpage.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +27,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Samarthan</title>
 </head>
@@ -49,7 +50,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link nav dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false" >
                 WHAT WE DO
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -83,8 +84,8 @@
       <div class="nav">EVENTS</div>
       <div class="nav">ABOUT</div>
     </div> -->
-    <div class="middle">
-      <div class="slogan">Together For Tomorrow</div>
+    <div class="middle"> 
+      <div class="slogan "  data-aos="fade-up"  data-aos="fade-up"  data-aos-duration="1000">Together For Tomorrow</div>
       <div class="images">
         <img src="logo.svg" alt="logo" class="samarthan-logo">
         <img src="dots.svg" alt="dots" class="top">
@@ -95,8 +96,8 @@
   </section>
   <section class="bg-transition"></section>
   <section class="mission-vision">
-    <div class="mission">
-      <h1>What We Do</h1>
+    <div class="mission" >
+      <h1 data-aos="fade-up" data-aos-duration="5000">What We Do</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel
         dui sit amet felis congue ultricies. Aenean ac finibus ante. Aenean eu
@@ -111,7 +112,7 @@
       </p>
     </div>
     <div class="vision">
-      <h1>Our Vision</h1>
+      <h1 data-aos="fade-up"  data-aos-delay="150"  data-aos-duration="1000">Our Vision</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel
         dui sit amet felis congue ultricies. Aenean ac finibus ante. Aenean eu
@@ -127,9 +128,9 @@
     </div>
   </section>
   <section class="monthly-highlights">
-    <h1>Monthly highlights</h1>
+    <h1><span data-aos="fade-up" data-aos-duration="800">Monthly highlights </span></h1>
     <div class="highlights">
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 18rem" data-aos="fade-up" data-aos-duration="500">
         <img src="./img.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <p class="card-text">
@@ -142,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 18rem" data-aos="fade-up" data-aos-duration="800">
         <img src="./img.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <p class="card-text">
@@ -155,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 18rem" data-aos="fade-up" data-aos-duration="1000">
         <img src="./img.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <p class="card-text">
@@ -168,7 +169,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 18rem" data-aos="fade-up" data-aos-duration="1200">
         <img src="./img.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <p class="card-text">
@@ -182,8 +183,8 @@
         </div>
       </div>
     </div>
-    <a class="highlights-see-more" href="#">See More&nbsp;
-      <i class="fa-solid fa-arrow-right fa-beat fa-lg" style="color: #292e32"></i></a>
+    <a class="highlights-see-more" href="#" >See More&nbsp;<span data-aos="fade-up">
+      <i class="fa-solid fa-arrow-right fa-beat fa-lg" style="color: #292e32" ></i></span></a>
   </section>
 
   <footer class="main-footer">
@@ -236,5 +237,9 @@
 
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init();
+ </script>
 </body>
 </html>
