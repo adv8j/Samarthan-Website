@@ -354,8 +354,7 @@ body {
 .middle {
   transform: translateY(-10px);
   background: #bed4c1;
-  /* display: flex; */
-  height: 90vh;
+  height: 40vh;
   align-items: center;
   flex-direction: column; /* Change flex direction to column on smaller screens */
   text-align: center; /* Center the content on smaller screens */
@@ -381,7 +380,6 @@ body {
   justify-content: end;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 50px;
   order: 1; /* Change the order of the images on smaller screens */
 }
 
@@ -422,11 +420,11 @@ body {
 }
 .top {
   /* transform: translate(-150px, -280px); */
-  transform: translate(-126%, -41%);
+  transform: translate(-50%, -35%);
 }
 .bottom {
   /* transform: translate(-800px, 280px); */
-  transform: translate(-672%, 41%);
+  transform: translate(12%, 20%);
 }
 
 .bg-transition {
@@ -447,12 +445,30 @@ nav {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+@media (min-width: 1715px) {
+  .middle {
+    z-index: 1;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+  .samarthan-logo {
+    height: 50vh;
+
+    width: 50vh;
+  }
+}
 @media (max-width: 1715px) {
   .middle {
     z-index: 1;
     flex-direction: column;
     height: fit-content;
-    /* align-items: center; */
+    align-items: center;
+  }
+  .samarthan-logo {
+    height: 50vh;
+
+    width: 50vh;
   }
 }
 @media (max-width: 1050px) {
@@ -460,8 +476,12 @@ nav {
   .middle .bottom {
     display: none;
   }
+  .samarthan-logo {
+    height: 50vw;
+    width: 50vw;
+  }
 }
-@media (max-width: 810px) {
+@media (max-width: 950px) {
   .slogan {
     font-size: 50px;
     display: block;
@@ -471,8 +491,22 @@ nav {
     text-align: center;
   }
   .middle .samarthan-logo {
-    height: 80vw;
-    width: 80vw;
+    height: 60vw;
+    width: 60vw;
+  }
+}
+@media (max-width: 830px) {
+  .slogan {
+    font-size: 50px;
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .middle .samarthan-logo {
+    height: 60vw;
+    width: 60vw;
   }
 }
 @media (max-width: 670px) {
@@ -490,8 +524,8 @@ nav {
     margin-left: 0px;
   }
   .middle .samarthan-logo {
-    height: 80vw;
-    width: 80vw;
+    height: 60vw;
+    width: 60vw;
   }
 }
 @media (max-width: 480px) {
@@ -537,3 +571,4 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
   background: #5f8f74;
 }
+
